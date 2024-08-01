@@ -1,0 +1,7 @@
+def solution(numbers):
+    numbers.sort(key = lambda x : 9999-int((str(x)*4)[:4]))
+    answer = list(map(str,numbers))
+    answer = ''.join(answer)
+    if numbers[0] == 0:
+        return '0'
+    return answer
